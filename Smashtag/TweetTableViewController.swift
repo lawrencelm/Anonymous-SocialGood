@@ -89,6 +89,13 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate
         let defaults = NSUserDefaults.standardUserDefaults()
         var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
         defaults.setObject(searchText, forKey: String(count - 1))
+        
+        
+        let array = [["Cars", 10],["Swift", -2]]
+        let array2 = ["Cars", 10]
+        
+        defaults.setObject(array, forKey: "posts")
+        
         //count++
         //println(defaults)
         println(count)
