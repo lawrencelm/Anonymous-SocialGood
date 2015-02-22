@@ -1,6 +1,5 @@
 //
-//  MentionTableViewController.swift
-//  Smashtag
+//  PostTableViewController.swift
 //
 //  Created by Lawrence Lin Murata on 2/17/15.
 //  Copyright (c) 2015 Stanford University. All rights reserved.
@@ -10,7 +9,6 @@ import UIKit
 
 class PostTableViewController: UITableViewController, UITextFieldDelegate
 {
-  //  var tweet: Tweet?
     
     //prepares for segue to image view or to search view
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -19,23 +17,7 @@ class PostTableViewController: UITableViewController, UITextFieldDelegate
             destination = navCon.visibleViewController
         }
      if let itvc = destination as? ImageViewController {
-            //Image moves ot a special image view
-       /*     var row: Int = (self.tableView.indexPathForCell(sender as UITableViewCell)?.row)!
-            var string: String = ""
-            var count = 0
-            for i in tweet!.media {
-                if count == row {
-                    for char in i.description {
-                        if char != " " {
-                            string.append(char)
-                        } else {
-                            break
-                        }
-                    }
-                }
-                count++
-            }*/
-        //USEFUL:
+         //Image moves ot a special image view
          itvc.imageURL = NSURL(string: "http://u.s.kqed.net/2014/01/16/PaloAltoRoadSign.jpg")
         }
     }
@@ -80,17 +62,17 @@ class PostTableViewController: UITableViewController, UITextFieldDelegate
         case 1:
             let cell = tableView.dequeueReusableCellWithIdentifier("content", forIndexPath: indexPath) as PostTableViewCell
             cell.type = "Upvotes"
-            cell.row = row//indexPath.row
+            cell.row = row
             return cell
         case 2:
             let cell = tableView.dequeueReusableCellWithIdentifier("image", forIndexPath: indexPath) as ImageTableViewCell
             cell.url = "http://u.s.kqed.net/2014/01/16/PaloAltoRoadSign.jpg"
-            cell.row = row//indexPath.row
+            cell.row = row
             return cell
         default:
             let cell = tableView.dequeueReusableCellWithIdentifier("content", forIndexPath: indexPath) as PostTableViewCell
             cell.type = nil
-            cell.row = row//indexPath.row
+            cell.row = row
             return cell
         }
     }

@@ -26,7 +26,6 @@ class WriteViewController: UIViewController, UITextFieldDelegate
     var postText: String? {
         didSet {
             searchTextField?.text = postText
-            //tableView.reloadData() // clear out the table view
             refresh()
         }
     }
@@ -57,39 +56,6 @@ class WriteViewController: UIViewController, UITextFieldDelegate
     
     // MARK: - Refreshing
     
-    /* private var lastSuccessfulRequest: TwitterRequest?
-    
-    private var nextRequestToAttempt: TwitterRequest? {
-    if lastSuccessfulRequest == nil {
-    if postText != nil {
-    return TwitterRequest(search: postText!, count: 100)
-    } else {
-    return nil
-    }
-    } else {
-    return lastSuccessfulRequest!.requestForNewer
-    }
-    }
-    
-    @IBAction private func refresh(sender: UIRefreshControl?) {
-    if let request = nextRequestToAttempt {
-    request.fetchTweets { (newTweets) -> Void in
-    dispatch_async(dispatch_get_main_queue()) { () -> Void in
-    if newTweets.count > 0 {
-    self.lastSuccessfulRequest = request // oops, forgot this line in lecture
-    //self.tweets.insert(newTweets, atIndex: 0)
-    self.tableView.reloadData()
-    }
-    sender?.endRefreshing()
-    }
-    }
-    } else {
-    sender?.endRefreshing()
-    }
-    }*/
-    
-    
-    
     // store the searchText into a dictionary in NSUserDefaults
     func refresh() {
         if postText != nil{
@@ -97,24 +63,7 @@ class WriteViewController: UIViewController, UITextFieldDelegate
             println(postText)
             let defaults = NSUserDefaults.standardUserDefaults()
             var votes = 0
-            /*struct myDataType{
-            }*/
-            
-            //var array = [, votes]
-            /*if defaults.objectForKey("0") == nil {
-            defaults.setObject(0, forKey: "0")//postText!)
-            }*//* else {
-            let number = NSUserDefaults.standardUserDefaults().objectForKey("0")) as Int?
-            if number != nil {
-            var numberN = number!
-            numberN++
-            println(numberN)
-            countLabel.text = String(numberN)
-            defaults.setInteger(numberN, forKey: String(index))
-            }
-            }*/
-            /*defaults.setInteger(votes,forKey: postText!);*/
-            
+
             var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
             println(count) //MAKE SURE IT'S AN EVEN NUMBER
             
