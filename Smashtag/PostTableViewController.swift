@@ -40,6 +40,8 @@ class PostTableViewController: UITableViewController, UITextFieldDelegate
         }
     }
     
+    var row: Int?
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         //URL, hashtag, user mention, user who posted, image
         return 3
@@ -73,22 +75,22 @@ class PostTableViewController: UITableViewController, UITextFieldDelegate
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier("content", forIndexPath: indexPath) as PostTableViewCell
             cell.type = "Text"
-            cell.row = indexPath.row
+            cell.row = row
             return cell
         case 1:
             let cell = tableView.dequeueReusableCellWithIdentifier("content", forIndexPath: indexPath) as PostTableViewCell
             cell.type = "Upvotes"
-            cell.row = indexPath.row
+            cell.row = row//indexPath.row
             return cell
         case 2:
             let cell = tableView.dequeueReusableCellWithIdentifier("image", forIndexPath: indexPath) as ImageTableViewCell
             cell.url = "http://u.s.kqed.net/2014/01/16/PaloAltoRoadSign.jpg"
-            cell.row = indexPath.row
+            cell.row = row//indexPath.row
             return cell
         default:
             let cell = tableView.dequeueReusableCellWithIdentifier("content", forIndexPath: indexPath) as PostTableViewCell
             cell.type = nil
-            cell.row = indexPath.row
+            cell.row = row//indexPath.row
             return cell
         }
     }

@@ -43,6 +43,7 @@ class PostTableViewCell: UITableViewCell
                         var keys = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys
                         
                         let newText = defaults.objectForKey(String(index)) as String?
+                        println(newText)
                         if newText != nil {
                             content.text = newText!
                         }

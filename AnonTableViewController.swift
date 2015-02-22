@@ -12,17 +12,18 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
 {
     
     //might use this later for Post view
-    /*
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var destination = segue.destinationViewController as? UIViewController
         if let navCon = destination as? UINavigationController {
             destination = navCon.visibleViewController
         }
-        if let mtvc = destination as? MentionTableViewController {
+        if let mtvc = destination as? PostTableViewController {
             var row: Int = (self.tableView.indexPathForCell(sender as UITableViewCell)?.row)!
-            var section :Int = (self.tableView.indexPathForCell(sender as UITableViewCell)?.section)!
+            mtvc.row = row
+            //var section :Int = (self.tableView.indexPathForCell(sender as UITableViewCell)?.section)!
         }
-    }*/
+    }
     
     var needReload : Bool? {
         didSet {
