@@ -8,7 +8,7 @@
         <!--Title-->
         <scene sceneID="OXZ-Mo-UfU">
             <objects>
-                <tableViewController id="MxJ-wT-guP" customClass="TweetTableViewController" customModule="Smashtag" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="MxJ-wT-guP" customClass="AnonTableViewController" customModule="Smashtag" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="162" sectionHeaderHeight="22" sectionFooterHeight="22" id="YG6-C9-8RK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,18 +20,12 @@
                             <textInputTraits key="textInputTraits" keyboardType="twitter"/>
                         </textField>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Tweet" rowHeight="162" id="hGs-lO-sU2" customClass="AnonTableViewCell" customModule="Smashtag" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="anon" rowHeight="162" id="hGs-lO-sU2" customClass="AnonTableViewCell" customModule="Smashtag" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hGs-lO-sU2" id="aQE-Er-hsb">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Anon Post" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcg-Q8-sZh">
-                                            <rect key="frame" x="36" y="24" width="475" height="116"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOR-OR-l2Y">
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOR-OR-l2Y">
                                             <rect key="frame" x="519" y="19" width="30" height="30"/>
                                             <state key="normal" title="up">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,8 +34,8 @@
                                                 <action selector="upvote:" destination="hGs-lO-sU2" eventType="touchUpInside" id="G58-zC-tr0"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7G-Mz-Nl7">
-                                            <rect key="frame" x="517" y="115" width="38" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7G-Mz-Nl7">
+                                            <rect key="frame" x="515" y="115" width="38" height="30"/>
                                             <state key="normal" title="down">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
@@ -49,24 +43,37 @@
                                                 <action selector="downvote:" destination="hGs-lO-sU2" eventType="touchUpInside" id="Hsz-E4-gIc"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCY-XB-eNJ">
-                                            <rect key="frame" x="525" y="71" width="30" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCY-XB-eNJ">
+                                            <rect key="frame" x="523" y="70" width="22" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" restorationIdentifier="anon" text="Anon Post" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcg-Q8-sZh">
+                                            <rect key="frame" x="8" y="19" width="503" height="126"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="gcg-Q8-sZh" secondAttribute="bottom" id="7cs-eJ-8se"/>
-                                        <constraint firstItem="gcg-Q8-sZh" firstAttribute="trailing" secondItem="aQE-Er-hsb" secondAttribute="trailingMargin" id="eNy-0W-vCn"/>
+                                        <constraint firstItem="gcg-Q8-sZh" firstAttribute="leading" secondItem="aQE-Er-hsb" secondAttribute="leadingMargin" id="6Qh-pg-rBy"/>
+                                        <constraint firstItem="pOR-OR-l2Y" firstAttribute="centerX" secondItem="p7G-Mz-Nl7" secondAttribute="centerX" id="8HN-xD-l0G"/>
+                                        <constraint firstItem="gcg-Q8-sZh" firstAttribute="bottom" secondItem="p7G-Mz-Nl7" secondAttribute="bottom" id="EsW-K9-dDZ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="RCY-XB-eNJ" secondAttribute="trailing" constant="47" id="FZH-Un-o4r"/>
+                                        <constraint firstItem="gcg-Q8-sZh" firstAttribute="top" secondItem="aQE-Er-hsb" secondAttribute="topMargin" constant="11" id="GcP-6M-mUv"/>
+                                        <constraint firstItem="p7G-Mz-Nl7" firstAttribute="leading" secondItem="gcg-Q8-sZh" secondAttribute="trailing" constant="4" id="GzP-zc-dZF"/>
+                                        <constraint firstItem="pOR-OR-l2Y" firstAttribute="centerX" secondItem="RCY-XB-eNJ" secondAttribute="centerX" id="gCw-cS-3gM"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="gcg-Q8-sZh" secondAttribute="bottom" constant="8" id="jUe-tK-uuC"/>
+                                        <constraint firstAttribute="centerY" secondItem="RCY-XB-eNJ" secondAttribute="centerY" id="nfR-HR-YkW"/>
+                                        <constraint firstItem="p7G-Mz-Nl7" firstAttribute="leading" secondItem="gcg-Q8-sZh" secondAttribute="trailing" constant="4" id="o9j-mL-oSJ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="pOR-OR-l2Y" secondAttribute="trailing" constant="43" id="pwk-RH-Ls1"/>
+                                        <constraint firstItem="pOR-OR-l2Y" firstAttribute="top" secondItem="gcg-Q8-sZh" secondAttribute="top" id="skT-2S-QY5"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="anonPost" destination="gcg-Q8-sZh" id="9cj-jZ-eRE"/>
-                                    <outlet property="down" destination="p7G-Mz-Nl7" id="av8-ZW-JKf"/>
-                                    <outlet property="tweetTextLabel" destination="gcg-Q8-sZh" id="rQt-Tb-S0H"/>
-                                    <outlet property="up" destination="pOR-OR-l2Y" id="Z95-CL-UBG"/>
-                                    <segue destination="coh-ty-rqG" kind="show" id="TpX-xO-iAz"/>
+                                    <outlet property="countLabel" destination="RCY-XB-eNJ" id="4lh-d7-m0R"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -89,7 +96,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YdZ-xU-89r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-591" y="235"/>
+            <point key="canvasLocation" x="-591" y="233"/>
         </scene>
         <!--Recent Searches-->
         <scene sceneID="hiz-sI-1XN">
@@ -236,7 +243,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H2c-Iv-EYG">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H2c-Iv-EYG">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Bmb-hN-zg5">
@@ -289,6 +296,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lKD-we-Daz"/>
+        <segue reference="U0j-PZ-ORX"/>
     </inferredMetricsTieBreakers>
 </document>
