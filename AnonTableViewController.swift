@@ -113,15 +113,21 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
         var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
         println(count) //MAKE SURE IT'S AN EVEN NUMBER
             
-        if count % 2 != 0 {
+        /*if count % 2 != 0 {
             for key in NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys {
                 println("cleaning")
                 NSUserDefaults.standardUserDefaults().removeObjectForKey(key.description)
             }
-        }
-
+            count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
+            println(count)
+        }*/
+            
+        /*let dictType1 = NSUserDefaults.standardUserDefaults().dictionaryRepresentation() as Dictionary
+        println(dictType1)*/
         defaults.setObject(postText, forKey: String(count/2 + 1))
         defaults.setObject(votes, forKey: String(-(count/2 + 1)))
+        /*let dictType = NSUserDefaults.standardUserDefaults().dictionaryRepresentation() as Dictionary
+        println(dictType)*/
             
         //var x = defaults.integerForKey(postText!)
         //println(x)

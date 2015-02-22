@@ -47,6 +47,12 @@ class TopTableViewCell: UITableViewCell
         }
     }
     
+    var indexKeyNeg: String? {
+        didSet {
+            
+        }
+    }
+    
     @IBOutlet weak var countLabel: UILabel!
     
     @IBOutlet weak var anonPost: UILabel!
@@ -55,15 +61,15 @@ class TopTableViewCell: UITableViewCell
         var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
         var index = count/2 - row!
         let defaults = NSUserDefaults.standardUserDefaults()
-        let number = NSUserDefaults.standardUserDefaults().objectForKey(String(-index)) as Int?
+        let number = NSUserDefaults.standardUserDefaults().objectForKey(indexKeyNeg!) as Int?
         if number != nil {
             var numberN = number!
             numberN++
             println(numberN)
             countLabel.text = String(numberN)
-            defaults.setInteger(numberN, forKey: String(-index))
+            defaults.setInteger(numberN, forKey: indexKeyNeg!)
         }
-        
+       // updateUI()
         /*var count: Int = NSUserDefaults.standardUserDefaults().integerForKey(anonPost.text!)
         count++
         let defaults = NSUserDefaults.standardUserDefaults()
@@ -75,15 +81,15 @@ class TopTableViewCell: UITableViewCell
         var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
         var index = count/2 - row!
         let defaults = NSUserDefaults.standardUserDefaults()
-        let number = NSUserDefaults.standardUserDefaults().objectForKey(String(-index)) as Int?
+        let number = NSUserDefaults.standardUserDefaults().objectForKey(indexKeyNeg!) as Int?
         if number != nil {
             var numberN = number!
             numberN--
             println(numberN)
             countLabel.text = String(numberN)
-            defaults.setInteger(numberN, forKey: String(-index))
+            defaults.setInteger(numberN, forKey: indexKeyNeg!)
         }
-        
+       // updateUI()
     }
     
     
@@ -129,6 +135,7 @@ class TopTableViewCell: UITableViewCell
         
         var indexCur = myArr[row!]
         var indexCurNum: Int? = myArr[row!].toInt()
+        indexKeyNeg = String(indexCurNum!)
         let newText = defaults.objectForKey(String(-indexCurNum!)) as String?
         let newNumber = defaults.objectForKey(indexCur)as Int?
         if newText != nil && newNumber != nil {

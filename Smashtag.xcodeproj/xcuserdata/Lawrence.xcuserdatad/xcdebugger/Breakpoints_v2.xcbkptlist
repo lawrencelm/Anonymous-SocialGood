@@ -68,11 +68,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Smashtag/TopTableViewCell.swift"
-            timestampString = "446283848.349624"
+            timestampString = "446292385.091452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "TopTableViewCell"
             landmarkType = "3">
          </BreakpointContent>
@@ -84,11 +84,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Smashtag/TopTableViewCell.swift"
-            timestampString = "446284263.214453"
+            timestampString = "446292385.091452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "updateUI()"
             landmarkType = "5">
          </BreakpointContent>
