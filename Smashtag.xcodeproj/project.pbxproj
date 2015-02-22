@@ -17,6 +17,7 @@
 		21DE97A71A9A0C9F001395FC /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE97A61A9A0C9E001395FC /* WriteViewController.swift */; };
 		21DE97A91A9A204A001395FC /* TopPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE97A81A9A204A001395FC /* TopPostTableViewCell.swift */; };
 		21E35BE01A96FB8C00BD0F4E /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E35BDF1A96FB8C00BD0F4E /* ImageTableViewCell.swift */; };
+		3B864EDC1A9A37E000286524 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B864EDB1A9A37E000286524 /* MapKit.framework */; };
 		EC6876171A898EF4006B5FDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6876161A898EF4006B5FDB /* AppDelegate.swift */; };
 		EC68761C1A898EF4006B5FDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC68761A1A898EF4006B5FDB /* Main.storyboard */; };
 		EC68761E1A898EF4006B5FDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC68761D1A898EF4006B5FDB /* Images.xcassets */; };
@@ -45,6 +46,7 @@
 		21DE97A61A9A0C9E001395FC /* WriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		21DE97A81A9A204A001395FC /* TopPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopPostTableViewCell.swift; sourceTree = "<group>"; };
 		21E35BDF1A96FB8C00BD0F4E /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		3B864EDB1A9A37E000286524 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EC6876111A898EF4006B5FDB /* Smashtag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smashtag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6876151A898EF4006B5FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC6876161A898EF4006B5FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B864EDC1A9A37E000286524 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		EC6876081A898EF4006B5FDB = {
 			isa = PBXGroup;
 			children = (
+				3B864EDB1A9A37E000286524 /* MapKit.framework */,
 				EC6876131A898EF4006B5FDB /* Smashtag */,
 				EC6876291A898EF4006B5FDB /* SmashtagTests */,
 				EC6876121A898EF4006B5FDB /* Products */,

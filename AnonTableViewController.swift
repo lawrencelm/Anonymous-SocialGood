@@ -51,6 +51,8 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
         rightBarButton.target = self
         refresh()
         
+        self.navigationItem.backBarButtonItem?.tintColor = UIColor.redColor()
+        
     }
     
     @IBAction func unwindToRecent(segue: UIStoryboardSegue) {
