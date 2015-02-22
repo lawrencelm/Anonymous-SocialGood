@@ -1,6 +1,5 @@
 //
-//  TweetTableViewController.swift
-//  Smashtag
+//  TopTableViewController.swift
 //
 //  Created by Lawrence Lin Murata.
 //  Copyright (c) 2015 Stanford University. All rights reserved.
@@ -19,12 +18,10 @@ class TopTableViewController: UITableViewController, UITextFieldDelegate
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
-        //return tweets.count
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
-        //return tweets[section].count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell

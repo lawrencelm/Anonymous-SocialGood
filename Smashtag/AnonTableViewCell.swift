@@ -1,6 +1,5 @@
 //
-//  TweetTableViewCell.swift
-//  Smashtag
+//  AnonTableViewCell.swift
 //
 //  Created by Lawrence Lin Murata.
 //  Copyright (c) 2015 Stanford University. All rights reserved.
@@ -19,12 +18,6 @@ class AnonTableViewCell: UITableViewCell
     
     @IBOutlet weak var countLabel: UILabel!
     
-    /*var anonText: String? {
-        didSet {
-            
-        }
-    }*/
-    
     @IBOutlet weak var anonPost: UILabel!
     
     @IBAction func upvote(sender: AnyObject) {
@@ -39,12 +32,6 @@ class AnonTableViewCell: UITableViewCell
             countLabel.text = String(numberN)
             defaults.setInteger(numberN, forKey: String(-index))
         }
-        
-        /*var count: Int = NSUserDefaults.standardUserDefaults().integerForKey(anonPost.text!)
-        count++
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setInteger(count, forKey: anonPost.text!)
-        countLabel.text = String(count)*/
     }
     
     @IBAction func downvote(sender: AnyObject) {
@@ -66,7 +53,6 @@ class AnonTableViewCell: UITableViewCell
         anonPost?.attributedText = nil
         var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
         var index = count/2 - row!
-        //index = index
         let defaults = NSUserDefaults.standardUserDefaults()
         var keys = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys
 

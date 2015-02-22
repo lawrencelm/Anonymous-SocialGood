@@ -1,6 +1,5 @@
 //
-//  TweetTableViewController.swift
-//  Smashtag
+//  WriteTableViewController.swift
 //
 //  Created by Lawrence Lin Murata.
 //  Copyright (c) 2015 Stanford University. All rights reserved.
@@ -40,8 +39,6 @@ class WriteViewController: UIViewController, UITextFieldDelegate
         self.parentViewController?.navigationItem.rightBarButtonItem = rightBarButton;
         rightBarButton.action = "buttonAction:"
         rightBarButton.target = self
-        //tableView.estimatedRowHeight = tableView.rowHeight
-        //tableView.rowHeight = UITableViewAutomaticDimension
         refresh()
         
     }
@@ -65,37 +62,9 @@ class WriteViewController: UIViewController, UITextFieldDelegate
             var votes = 0
 
             var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
-            println(count) //MAKE SURE IT'S AN EVEN NUMBER
-            
-            /*if count % 2 != 0 {
-            for key in NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys {
-            println("cleaning")
-            NSUserDefaults.standardUserDefaults().removeObjectForKey(key.description)
-            }
-            count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
-            println(count)
-            }*/
-            
-            /*let dictType1 = NSUserDefaults.standardUserDefaults().dictionaryRepresentation() as Dictionary
-            println(dictType1)*/
+
             defaults.setObject(postText, forKey: String(count/2 + 1))
             defaults.setObject(votes, forKey: String(-(count/2 + 1)))
-            /*let dictType = NSUserDefaults.standardUserDefaults().dictionaryRepresentation() as Dictionary
-            println(dictType)*/
-            
-            //var x = defaults.integerForKey(postText!)
-            //println(x)
-            // println("stored \(postText)")
-            //count++
-            //println(defaults)
-            
-            // var keys = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys
-            // var values = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().values
-            // println("keys and vals:")
-            // println(keys)
-            // println(values)
-            //refreshControl?.beginRefreshing()
-            //refresh(refreshControl)
         }
     }
     
@@ -105,7 +74,6 @@ class WriteViewController: UIViewController, UITextFieldDelegate
         didSet {
             searchTextField.delegate = self
             searchTextField.text = postText
-            //self.performSegueWithIdentifier("doneSegue", sender: self)
         }
     }
     
