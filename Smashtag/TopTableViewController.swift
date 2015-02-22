@@ -16,6 +16,7 @@ class TopTableViewController: UITableViewController, UITextFieldDelegate
         }
         if let mtvc = destination as? PostTableViewController {
             var row: Int = (self.tableView.indexPathForCell(sender as UITableViewCell)?.row)!
+            mtvc.isOrdered = true
             mtvc.row = row
         }
     }

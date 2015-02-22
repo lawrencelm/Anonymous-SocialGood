@@ -24,6 +24,8 @@ class PostTableViewController: UITableViewController, UITextFieldDelegate
     
     var row: Int?
     
+    var isOrdered: Bool = false
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         //URL, hashtag, user mention, user who posted, image
         return 3
@@ -51,29 +53,56 @@ class PostTableViewController: UITableViewController, UITextFieldDelegate
     //Sets cell and sends information that is used in the cell class
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        switch indexPath.section {
-            //sections 0, 1, 2, 4 create mention cells
-            //section 3 creates an image cell
-        case 0:
-            let cell = tableView.dequeueReusableCellWithIdentifier("content", forIndexPath: indexPath) as PostTableViewCell
-            cell.type = "Text"
-            cell.row = row
-            return cell
-        case 1:
-            let cell = tableView.dequeueReusableCellWithIdentifier("content", forIndexPath: indexPath) as PostTableViewCell
-            cell.type = "Upvotes"
-            cell.row = row
-            return cell
-        case 2:
-            let cell = tableView.dequeueReusableCellWithIdentifier("image", forIndexPath: indexPath) as ImageTableViewCell
-            cell.url = "http://u.s.kqed.net/2014/01/16/PaloAltoRoadSign.jpg"
-            cell.row = row
-            return cell
-        default:
-            let cell = tableView.dequeueReusableCellWithIdentifier("content", forIndexPath: indexPath) as PostTableViewCell
-            cell.type = nil
-            cell.row = row
-            return cell
+        if isOrdered {
+            switch indexPath.section {
+                //sections 0, 1, 2, 4 create mention cells
+                //section 3 creates an image cell
+            case 0:
+                let cell = tableView.dequeueReusableCellWithIdentifier("content", forIndexPath: indexPath) as TopPostTableViewCell
+                cell.type = "Text"
+                cell.row = row
+                return cell
+            case 1:
+                let cell = tableView.dequeueReusableCellWithIdentifier("content", forIndexPath: indexPath) as TopPostTableViewCell
+                cell.type = "Upvotes"
+                cell.row = row
+                return cell
+            case 2:
+                let cell = tableView.dequeueReusableCellWithIdentifier("image", forIndexPath: indexPath) as ImageTableViewCell
+                cell.url = "http://u.s.kqed.net/2014/01/16/PaloAltoRoadSign.jpg"
+                cell.row = row
+                return cell
+            default:
+                let cell = tableView.dequeueReusableCellWithIdentifier("content", forIndexPath: indexPath) as TopPostTableViewCell
+                cell.type = nil
+                cell.row = row
+                return cell
+            }
+        } else {
+            switch indexPath.section {
+                //sections 0, 1, 2, 4 create mention cells
+                //section 3 creates an image cell
+            case 0:
+                let cell = tableView.dequeueReusableCellWithIdentifier("content", forIndexPath: indexPath) as PostTableViewCell
+                cell.type = "Text"
+                cell.row = row
+                return cell
+            case 1:
+                let cell = tableView.dequeueReusableCellWithIdentifier("content", forIndexPath: indexPath) as PostTableViewCell
+                cell.type = "Upvotes"
+                cell.row = row
+                return cell
+            case 2:
+                let cell = tableView.dequeueReusableCellWithIdentifier("image", forIndexPath: indexPath) as ImageTableViewCell
+                cell.url = "http://u.s.kqed.net/2014/01/16/PaloAltoRoadSign.jpg"
+                cell.row = row
+                return cell
+            default:
+                let cell = tableView.dequeueReusableCellWithIdentifier("content", forIndexPath: indexPath) as PostTableViewCell
+                cell.type = nil
+                cell.row = row
+                return cell
+            }
         }
     }
 }

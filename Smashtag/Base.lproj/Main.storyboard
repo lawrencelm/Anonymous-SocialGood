@@ -209,7 +209,7 @@
                                 <connections>
                                     <outlet property="anonPost" destination="iDR-dv-Pt2" id="zGd-Wi-LtX"/>
                                     <outlet property="countLabel" destination="8sy-nC-yR6" id="0CL-1u-zzB"/>
-                                    <segue destination="coh-ty-rqG" kind="show" id="ybR-I0-aUn"/>
+                                    <segue destination="dEe-Jv-yDm" kind="show" id="yw5-D7-IRz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -381,9 +381,99 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZl-UC-JRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Post Table View Controller-->
+        <scene sceneID="6qt-MR-3zd">
+            <objects>
+                <tableViewController id="dEe-Jv-yDm" customClass="PostTableViewController" customModule="Smashtag" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" id="072-nW-ZFQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="content" textLabel="HTd-Zj-oJW" rowHeight="90" style="IBUITableViewCellStyleDefault" id="ThM-er-B5q" customClass="TopPostTableViewCell" customModule="Smashtag">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ThM-er-B5q" id="fac-ZY-Wsk">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Content" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HTd-Zj-oJW">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="content" destination="HTd-Zj-oJW" id="cB5-E3-qee"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="image" id="o4G-fr-126" customClass="ImageTableViewCell" customModule="Smashtag" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o4G-fr-126" id="uxQ-P7-DMK">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lId-RQ-Ptx">
+                                            <rect key="frame" x="144" y="9" width="313" height="71"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="myImageView" destination="lId-RQ-Ptx" id="cnq-9W-Bjb"/>
+                                    <segue destination="QYz-ky-Lg1" kind="show" id="qwh-qP-C6b"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dEe-Jv-yDm" id="LmK-2y-G9r"/>
+                            <outlet property="delegate" destination="dEe-Jv-yDm" id="dKF-TD-J8o"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kBZ-GT-1AG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="410" y="1332"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="iYG-fq-VvB">
+            <objects>
+                <viewController id="QYz-ky-Lg1" customClass="ImageViewController" customModule="Smashtag" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ubu-Os-fHg"/>
+                        <viewControllerLayoutGuide type="bottom" id="639-Qe-T0T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0pp-Vc-Pst">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QkH-D5-dwB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pqK-Ix-RmH">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QkH-D5-dwB" firstAttribute="bottom" secondItem="639-Qe-T0T" secondAttribute="top" id="1YM-i3-aPV"/>
+                            <constraint firstAttribute="trailing" secondItem="QkH-D5-dwB" secondAttribute="trailing" id="FSI-2C-WAo"/>
+                            <constraint firstAttribute="centerX" secondItem="pqK-Ix-RmH" secondAttribute="centerX" id="gYt-is-LI9"/>
+                            <constraint firstItem="QkH-D5-dwB" firstAttribute="leading" secondItem="0pp-Vc-Pst" secondAttribute="leading" id="jdr-C4-YuO"/>
+                            <constraint firstAttribute="centerY" secondItem="pqK-Ix-RmH" secondAttribute="centerY" id="jow-mE-Tqp"/>
+                            <constraint firstItem="QkH-D5-dwB" firstAttribute="top" secondItem="0pp-Vc-Pst" secondAttribute="top" id="liM-uf-ZGw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="QkH-D5-dwB" id="o8i-ix-LHp"/>
+                        <outlet property="spinner" destination="pqK-Ix-RmH" id="zdk-hV-oT9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vWg-TW-EXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="1266"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="nvU-Ha-FXI"/>
-        <segue reference="l4k-pL-79h"/>
     </inferredMetricsTieBreakers>
 </document>
