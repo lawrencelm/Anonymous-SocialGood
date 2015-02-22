@@ -2,7 +2,7 @@
 //  TweetTableViewController.swift
 //  Smashtag
 //
-//  Created by CS193p Instructor.
+//  Created by Lawrence Lin Murata.
 //  Copyright (c) 2015 Stanford University. All rights reserved.
 //
 

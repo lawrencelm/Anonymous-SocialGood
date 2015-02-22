@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AnonTableViewCell: UITableViewCell
+class TopTableViewCell: UITableViewCell
 {
     
     var row: Int? {
@@ -18,12 +18,6 @@ class AnonTableViewCell: UITableViewCell
     }
     
     @IBOutlet weak var countLabel: UILabel!
-    
-    /*var anonText: String? {
-        didSet {
-            
-        }
-    }*/
     
     @IBOutlet weak var anonPost: UILabel!
     
@@ -69,9 +63,15 @@ class AnonTableViewCell: UITableViewCell
         //index = index
         let defaults = NSUserDefaults.standardUserDefaults()
         var keys = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys
-       // println(keys)
+        // println(keys)
         //keys.
         //var revK = keys.reverse()
+        
+        /*var arr = []
+        
+        for var i = -(count/2); i < 0; i++ {
+            arr.
+        }*/
         
         var arrK = keys.array
         
@@ -81,14 +81,14 @@ class AnonTableViewCell: UITableViewCell
             anonPost.text = newText!
             countLabel.text = String(newNumber!)
         }
-
+        
         
         /*if newNumber != nil && newText != nil {
-            anonPost.text = newText
-            countLabel.text = String(newNumber)
+        anonPost.text = newText
+        countLabel.text = String(newNumber)
         }*/
         //var i = 0
-       // keys.last
+        // keys.last
         /*var k = arrK[index]
         println("anon post label >>")
         //println(k.description)
@@ -98,21 +98,21 @@ class AnonTableViewCell: UITableViewCell
         countLabel.text = String(val)*/
         
         /*for k in arrK {
-            if(i == count - 1 - row) {
-                let x = k as String
-                println("anon post label >>")
-                println(k.description)
-                println(x)
-                let val = defaults.integerForKey(x)
-                anonPost.text = k.description
-                countLabel.text = String(val)
-                break
-            }
-            i++
+        if(i == count - 1 - row) {
+        let x = k as String
+        println("anon post label >>")
+        println(k.description)
+        println(x)
+        let val = defaults.integerForKey(x)
+        anonPost.text = k.description
+        countLabel.text = String(val)
+        break
+        }
+        i++
         }*/
         /*if let name = defaults.objectForKey(String(index)) {
-            println(name)
-            anonPost?.text = name as NSString
+        println(name)
+        anonPost?.text = name as NSString
         }*/
     }
 }
