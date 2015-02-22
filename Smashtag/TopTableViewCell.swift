@@ -96,13 +96,46 @@ class TopTableViewCell: UITableViewCell
         let defaults = NSUserDefaults.standardUserDefaults()
         var keys = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys
         
-       /* let dictType = NSUserDefaults.standardUserDefaults().dictionaryRepresentation() as Dictionary
+        let dictType = NSUserDefaults.standardUserDefaults().dictionaryRepresentation() as Dictionary
        // dictType.keysSortedByValue(>)
-        
-        var dict :  Dictionary
+        var dict = Dictionary<String, Int>()
+        //var dict :  Dictionary<String, Int>?
         for var i = -(count/2); i < 0; i++ {
-            dict.
-        }*/
+            var newString = String(i)
+            var newNumber = defaults.objectForKey(String(i))as Int?
+            if newNumber != nil {
+                dict.updateValue(newNumber!, forKey: newString)
+            }
+        }
+        
+        println(dict)
+        
+       /* println(dict)
+        dict.keysSortedByValue(>)
+        println(dict)
+        dict.sortedKeysByValue(>)
+        println(dict)*/
+        
+     //   var dict = ["cola" : 10, "fanta" : 12, "sprite" : 8]
+        
+        var myArr = Array(dict.keys)
+        var sortedKeys: () = sort(&myArr) {
+            var obj1 = dict[$0] // get ob associated w/ key 1
+            var obj2 = dict[$1] // get ob associated w/ key 2
+            return obj1 > obj2
+        }
+        
+        println(myArr) // ["fanta", "cola", "sprite"]
+        
+        var indexCur = myArr[row!]
+        var indexCurNum: Int? = myArr[row!].toInt()
+        let newText = defaults.objectForKey(String(-indexCurNum!)) as String?
+        let newNumber = defaults.objectForKey(indexCur)as Int?
+        if newText != nil && newNumber != nil {
+            anonPost.text = newText!
+            countLabel.text = String(newNumber!)
+        }
+        
         // println(keys)
         //keys.
         //var revK = keys.reverse()
@@ -114,14 +147,14 @@ class TopTableViewCell: UITableViewCell
         }*/
         
         
-        var arrK = keys.array
+        /*var arrK = keys.array
         
         let newText = defaults.objectForKey(String(index)) as String?
         let newNumber = defaults.objectForKey(String(-index))as Int?
         if newText != nil && newNumber != nil {
             anonPost.text = newText!
             countLabel.text = String(newNumber!)
-        }
+        }*/
         
         
         /*if newNumber != nil && newText != nil {
