@@ -44,14 +44,20 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.parentViewController?.title = "Top posts";
+        
+        self.parentViewController?.title = "Recent";
         var rightBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Compose, target:self, action: "composeButton")
         self.parentViewController?.navigationItem.rightBarButtonItem = rightBarButton;
         rightBarButton.action = "buttonAction:"
         rightBarButton.target = self
         refresh()
         
-        self.navigationItem.backBarButtonItem?.tintColor = UIColor.redColor()
+        //self.navigationController?.navigationBar.tintColor = UIColor.purpleColor()
+        //self.navigationItem.backBarButtonItem?.tintColor = UIColor.purpleColor()
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor.purpleColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+
         
     }
     
@@ -77,6 +83,7 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
 
         defaults.setObject(postText, forKey: String(count/2 + 1))
         defaults.setObject(votes, forKey: String(-(count/2 + 1)))
+            
         }
     }
     
@@ -96,6 +103,7 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
         }
         return true
     }
+    
     
     private struct Storyboard {
         static let CellReuseIdentifier = "anon"

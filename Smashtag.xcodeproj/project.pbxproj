@@ -18,6 +18,7 @@
 		21DE97A91A9A204A001395FC /* TopPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE97A81A9A204A001395FC /* TopPostTableViewCell.swift */; };
 		21E35BE01A96FB8C00BD0F4E /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E35BDF1A96FB8C00BD0F4E /* ImageTableViewCell.swift */; };
 		3B864EDC1A9A37E000286524 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B864EDB1A9A37E000286524 /* MapKit.framework */; };
+		3B864EDE1A9A5C1700286524 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B864EDD1A9A5C1600286524 /* ProfileViewController.swift */; };
 		EC6876171A898EF4006B5FDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6876161A898EF4006B5FDB /* AppDelegate.swift */; };
 		EC68761C1A898EF4006B5FDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC68761A1A898EF4006B5FDB /* Main.storyboard */; };
 		EC68761E1A898EF4006B5FDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC68761D1A898EF4006B5FDB /* Images.xcassets */; };
@@ -47,6 +48,7 @@
 		21DE97A81A9A204A001395FC /* TopPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopPostTableViewCell.swift; sourceTree = "<group>"; };
 		21E35BDF1A96FB8C00BD0F4E /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		3B864EDB1A9A37E000286524 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3B864EDD1A9A5C1600286524 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EC6876111A898EF4006B5FDB /* Smashtag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smashtag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6876151A898EF4006B5FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC6876161A898EF4006B5FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				21DE97A81A9A204A001395FC /* TopPostTableViewCell.swift */,
 				2156AD8E1A99557000CD942C /* AnonTableViewController.swift */,
 				2156AD8C1A98B92900CD942C /* AnonTableViewCell.swift */,
+				3B864EDD1A9A5C1600286524 /* ProfileViewController.swift */,
 				21DE97A21A99F708001395FC /* PostTableViewCell.swift */,
 				21DE97A41A99F725001395FC /* PostTableViewController.swift */,
 				21E35BDF1A96FB8C00BD0F4E /* ImageTableViewCell.swift */,
@@ -249,6 +252,7 @@
 				EC6876171A898EF4006B5FDB /* AppDelegate.swift in Sources */,
 				21DE97A51A99F725001395FC /* PostTableViewController.swift in Sources */,
 				21DE97A71A9A0C9F001395FC /* WriteViewController.swift in Sources */,
+				3B864EDE1A9A5C1700286524 /* ProfileViewController.swift in Sources */,
 				2156AD8D1A98B92900CD942C /* AnonTableViewCell.swift in Sources */,
 				21E35BE01A96FB8C00BD0F4E /* ImageTableViewCell.swift in Sources */,
 				21DE97A11A99B2BE001395FC /* TopTableViewController.swift in Sources */,
