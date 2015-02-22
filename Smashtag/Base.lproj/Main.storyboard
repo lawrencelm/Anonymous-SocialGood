@@ -74,6 +74,7 @@
                                 <connections>
                                     <outlet property="anonPost" destination="gcg-Q8-sZh" id="9cj-jZ-eRE"/>
                                     <outlet property="countLabel" destination="RCY-XB-eNJ" id="4lh-d7-m0R"/>
+                                    <segue destination="coh-ty-rqG" kind="show" id="l4k-pL-79h"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -168,6 +169,7 @@
                                 <connections>
                                     <outlet property="anonPost" destination="iDR-dv-Pt2" id="zGd-Wi-LtX"/>
                                     <outlet property="countLabel" destination="8sy-nC-yR6" id="0CL-1u-zzB"/>
+                                    <segue destination="coh-ty-rqG" kind="show" id="ybR-I0-aUn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -204,16 +206,16 @@
             </objects>
             <point key="canvasLocation" x="-1207" y="1062"/>
         </scene>
-        <!--Mention Table View Controller-->
+        <!--Post Table View Controller-->
         <scene sceneID="nGT-fl-ElY">
             <objects>
-                <tableViewController id="coh-ty-rqG" customClass="MentionTableViewController" customModule="Smashtag" sceneMemberID="viewController">
+                <tableViewController id="coh-ty-rqG" customClass="PostTableViewController" customModule="Smashtag" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" id="6vO-QK-cg9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="content" textLabel="KUP-Tf-q8U" rowHeight="90" style="IBUITableViewCellStyleDefault" id="NIv-hS-hje" customClass="MentionTableViewCell" customModule="Smashtag">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="content" textLabel="KUP-Tf-q8U" rowHeight="90" style="IBUITableViewCellStyleDefault" id="NIv-hS-hje" customClass="PostTableViewCell" customModule="Smashtag">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NIv-hS-hje" id="zVF-aY-C94">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -228,7 +230,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="content" destination="KUP-Tf-q8U" id="fFd-xA-baS"/>
-                                    <segue destination="MxJ-wT-guP" kind="show" id="U0j-PZ-ORX"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="image" id="pEv-PK-Hzd" customClass="ImageTableViewCell" customModule="Smashtag" customModuleProvider="target">
@@ -256,7 +257,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNM-Pa-zN3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="230"/>
+            <point key="canvasLocation" x="192" y="252"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xdK-NY-9BI">
@@ -288,7 +289,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H2c-Iv-EYG">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H2c-Iv-EYG">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Bmb-hN-zg5">
@@ -312,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7S-iK-nKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="230"/>
+            <point key="canvasLocation" x="946" y="252"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="0NW-b8-0r8">
@@ -342,6 +343,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="U0j-PZ-ORX"/>
+        <segue reference="ybR-I0-aUn"/>
     </inferredMetricsTieBreakers>
 </document>

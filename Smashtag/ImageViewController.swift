@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Stanford University. All rights reserved.
 //
 
-/*import UIKit
+import UIKit
 
 class ImageViewController: UIViewController, UIScrollViewDelegate
 {
@@ -107,4 +107,4 @@ class ImageViewController: UIViewController, UIScrollViewDelegate
             fetchImage()
         }
     }
-}*/
+}
