@@ -8,6 +8,35 @@
 
 import UIKit
 
+extension Dictionary {
+    func sortedKeys(isOrderedBefore:(KeyType,KeyType) -> Bool) -> [KeyType] {
+        var array = Array(self.keys)
+        sort(&array, isOrderedBefore)
+        return array
+    }
+    
+    // Slower because of a lot of lookups, but probably takes less memory (this is equivalent to Pascals answer in an generic extension)
+    func sortedKeysByValue(isOrderedBefore:(ValueType, ValueType) -> Bool) -> [KeyType] {
+        return sortedKeys {
+            isOrderedBefore(self[$0]!, self[$1]!)
+        }
+    }
+    
+    // Faster because of no lookups, may take more memory because of duplicating contents
+    func keysSortedByValue(isOrderedBefore:(ValueType, ValueType) -> Bool) -> [KeyType] {
+        var array = Array(self)
+        sort(&array) {
+            let (lk, lv) = $0
+            let (rk, rv) = $1
+            return isOrderedBefore(lv, rv)
+        }
+        return array.map {
+            let (k, v) = $0
+            return k
+        }
+    }
+}
+
 class TopTableViewCell: UITableViewCell
 {
     
@@ -56,6 +85,8 @@ class TopTableViewCell: UITableViewCell
         
     }
     
+    
+    
     func updateUI() {
         anonPost?.attributedText = nil
         var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
@@ -72,6 +103,7 @@ class TopTableViewCell: UITableViewCell
         for var i = -(count/2); i < 0; i++ {
             arr.
         }*/
+        
         
         var arrK = keys.array
         
