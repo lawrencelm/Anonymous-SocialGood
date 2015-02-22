@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="What's on your Mind?..." borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V9H-xa-5XP">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="What's on your Mind?..." clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V9H-xa-5XP">
                                 <rect key="frame" x="26" y="74" width="548" height="177"/>
                                 <color key="textColor" red="0.54884785353535359" green="0.54884785353535359" blue="0.54884785353535359" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
@@ -48,7 +48,7 @@
             </objects>
             <point key="canvasLocation" x="-552" y="-384"/>
         </scene>
-        <!--hi testing-->
+        <!--Home-->
         <scene sceneID="OXZ-Mo-UfU">
             <objects>
                 <tableViewController id="MxJ-wT-guP" customClass="AnonTableViewController" customModule="Smashtag" customModuleProvider="target" sceneMemberID="viewController">
@@ -56,7 +56,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <textField key="tableHeaderView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Twitter Search Query" minimumFontSize="17" id="ALr-b2-w3E">
+                        <textField key="tableHeaderView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What are you thinking about?" minimumFontSize="17" id="ALr-b2-w3E">
                             <rect key="frame" x="0.0" y="-30" width="600" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -126,8 +126,8 @@
                             <outlet property="delegate" destination="MxJ-wT-guP" id="vqq-hV-YCT"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Search" id="OcD-pk-jBt"/>
-                    <navigationItem key="navigationItem" title="hi testing" id="BE7-0e-WoW">
+                    <tabBarItem key="tabBarItem" title="Home" id="OcD-pk-jBt"/>
+                    <navigationItem key="navigationItem" title="Home" id="BE7-0e-WoW">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="L8E-gs-URh"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -146,7 +146,7 @@
             </objects>
             <point key="canvasLocation" x="-503" y="463"/>
         </scene>
-        <!--Recent Searches-->
+        <!--Top posts-->
         <scene sceneID="hiz-sI-1XN">
             <objects>
                 <tableViewController id="JYS-Qj-LWr" customClass="TopTableViewController" customModule="Smashtag" customModuleProvider="target" sceneMemberID="viewController">
@@ -218,7 +218,7 @@
                             <outlet property="delegate" destination="JYS-Qj-LWr" id="BDN-su-c1n"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Recent Searches" id="22m-vG-Xwr"/>
+                    <tabBarItem key="tabBarItem" title="Top posts" id="22m-vG-Xwr"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEB-0v-xYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -329,7 +329,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H2c-Iv-EYG">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H2c-Iv-EYG">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Bmb-hN-zg5">
@@ -474,6 +474,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nvU-Ha-FXI"/>
+        <segue reference="lKD-we-Daz"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -44,7 +44,7 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.parentViewController?.title = "Recent";
+        self.parentViewController?.title = "Top posts";
         var rightBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Compose, target:self, action: "composeButton")
         self.parentViewController?.navigationItem.rightBarButtonItem = rightBarButton;
         rightBarButton.action = "buttonAction:"
