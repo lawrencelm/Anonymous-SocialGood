@@ -1,5 +1,5 @@
 //
-//  MentionTableViewCell.swift
+//  PostTableViewCell.swift
 //  Smashtag
 //
 //  Created by Lawrence Lin Murata on 2/18/15.

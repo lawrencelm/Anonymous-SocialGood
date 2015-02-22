@@ -9,6 +9,16 @@ import UIKit
 
 class TopTableViewController: UITableViewController, UITextFieldDelegate
 {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var destination = segue.destinationViewController as? UIViewController
+        if let navCon = destination as? UINavigationController {
+            destination = navCon.visibleViewController
+        }
+        if let mtvc = destination as? PostTableViewController {
+            var row: Int = (self.tableView.indexPathForCell(sender as UITableViewCell)?.row)!
+            mtvc.row = row
+        }
+    }
     
     private struct Storyboard {
         static let CellReuseIdentifier = "top"
