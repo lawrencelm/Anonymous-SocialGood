@@ -87,10 +87,6 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
     
     // store the searchText into a dictionary in NSUserDefaults
     func refresh() {
-        /*for key in NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys {
-            println("cleaning")
-            NSUserDefaults.standardUserDefaults().removeObjectForKey(key.description)
-        }*/
         if postText != nil{
         println("post text >>")
         println(postText)
@@ -116,8 +112,15 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
             
         var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
         println(count) //MAKE SURE IT'S AN EVEN NUMBER
+            
+        if count % 2 != 0 {
+            for key in NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys {
+                println("cleaning")
+                NSUserDefaults.standardUserDefaults().removeObjectForKey(key.description)
+            }
+        }
 
-        defaults.setObject(postText, forKey: String(count/2 + 1))//postText!)
+        defaults.setObject(postText, forKey: String(count/2 + 1))
         defaults.setObject(votes, forKey: String(-(count/2 + 1)))
             
         //var x = defaults.integerForKey(postText!)
