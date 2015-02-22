@@ -9,21 +9,21 @@
 import UIKit
 
 extension Dictionary {
-    func sortedKeys(isOrderedBefore:(KeyType,KeyType) -> Bool) -> [KeyType] {
+    func sortedKeys(isOrderedBefore:(Key,Key) -> Bool) -> [Key] {
         var array = Array(self.keys)
         sort(&array, isOrderedBefore)
         return array
     }
     
     // Slower because of a lot of lookups, but probably takes less memory (this is equivalent to Pascals answer in an generic extension)
-    func sortedKeysByValue(isOrderedBefore:(ValueType, ValueType) -> Bool) -> [KeyType] {
+    func sortedKeysByValue(isOrderedBefore:(Value, Value) -> Bool) -> [Key] {
         return sortedKeys {
             isOrderedBefore(self[$0]!, self[$1]!)
         }
     }
     
     // Faster because of no lookups, may take more memory because of duplicating contents
-    func keysSortedByValue(isOrderedBefore:(ValueType, ValueType) -> Bool) -> [KeyType] {
+    func keysSortedByValue(isOrderedBefore:(Value, Value) -> Bool) -> [Key] {
         var array = Array(self)
         sort(&array) {
             let (lk, lv) = $0
@@ -39,6 +39,7 @@ extension Dictionary {
 
 class TopTableViewCell: UITableViewCell
 {
+    
     
     var row: Int? {
         didSet {
@@ -94,6 +95,14 @@ class TopTableViewCell: UITableViewCell
         //index = index
         let defaults = NSUserDefaults.standardUserDefaults()
         var keys = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys
+        
+       /* let dictType = NSUserDefaults.standardUserDefaults().dictionaryRepresentation() as Dictionary
+       // dictType.keysSortedByValue(>)
+        
+        var dict :  Dictionary
+        for var i = -(count/2); i < 0; i++ {
+            dict.
+        }*/
         // println(keys)
         //keys.
         //var revK = keys.reverse()
