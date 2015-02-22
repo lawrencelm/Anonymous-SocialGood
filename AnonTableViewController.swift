@@ -24,6 +24,13 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
         }
     }*/
     
+    var needReload : Bool? {
+        didSet {
+            tableView.reloadData() // clear out the table view
+            refresh()
+        }
+    }
+    
     
     // MARK: - Public API
     
@@ -41,13 +48,24 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.parentViewController?.title = "Recent";
+        var rightBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Compose, target:self, action: "composeButton")
+        self.parentViewController?.navigationItem.rightBarButtonItem = rightBarButton;
+        rightBarButton.action = "buttonAction:"
+        rightBarButton.target = self
         //tableView.estimatedRowHeight = tableView.rowHeight
         //tableView.rowHeight = UITableViewAutomaticDimension
         refresh()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+    }
+    
+    @IBAction func unwindToRecent(segue: UIStoryboardSegue) {
+        
+    }
+    
+    func buttonAction(sender: UIButton!){
+        performSegueWithIdentifier("bogus", sender:self)
     }
     
     // MARK: - Refreshing

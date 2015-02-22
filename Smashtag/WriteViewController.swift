@@ -1,0 +1,171 @@
+//
+//  TweetTableViewController.swift
+//  Smashtag
+//
+//  Created by Lawrence Lin Murata.
+//  Copyright (c) 2015 Stanford University. All rights reserved.
+//
+
+import UIKit
+
+class WriteViewController: UIViewController, UITextFieldDelegate
+{
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var destination = segue.destinationViewController as? UIViewController
+        if let navCon = destination as? UINavigationController {
+            destination = navCon.visibleViewController
+        }
+        if let mtvc = destination as? AnonTableViewController {
+            mtvc.needReload = true
+        }
+        }
+        
+    
+    // MARK: - Public API
+    
+    var postText: String? {
+        didSet {
+            searchTextField?.text = postText
+            //tableView.reloadData() // clear out the table view
+            refresh()
+        }
+    }
+    
+    // MARK: - View Controller Lifecycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.parentViewController?.title = "Recent";
+        var rightBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Compose, target:self, action: "composeButton")
+        self.parentViewController?.navigationItem.rightBarButtonItem = rightBarButton;
+        rightBarButton.action = "buttonAction:"
+        rightBarButton.target = self
+        //tableView.estimatedRowHeight = tableView.rowHeight
+        //tableView.rowHeight = UITableViewAutomaticDimension
+        refresh()
+        
+    }
+    
+    @IBAction func unwindToRecent(segue: UIStoryboardSegue) {
+        
+    }
+    
+    func buttonAction(sender: UIButton!){
+        performSegueWithIdentifier("bogus", sender:self)
+    }
+    
+    // MARK: - Refreshing
+    
+    /* private var lastSuccessfulRequest: TwitterRequest?
+    
+    private var nextRequestToAttempt: TwitterRequest? {
+    if lastSuccessfulRequest == nil {
+    if postText != nil {
+    return TwitterRequest(search: postText!, count: 100)
+    } else {
+    return nil
+    }
+    } else {
+    return lastSuccessfulRequest!.requestForNewer
+    }
+    }
+    
+    @IBAction private func refresh(sender: UIRefreshControl?) {
+    if let request = nextRequestToAttempt {
+    request.fetchTweets { (newTweets) -> Void in
+    dispatch_async(dispatch_get_main_queue()) { () -> Void in
+    if newTweets.count > 0 {
+    self.lastSuccessfulRequest = request // oops, forgot this line in lecture
+    //self.tweets.insert(newTweets, atIndex: 0)
+    self.tableView.reloadData()
+    }
+    sender?.endRefreshing()
+    }
+    }
+    } else {
+    sender?.endRefreshing()
+    }
+    }*/
+    
+    
+    
+    // store the searchText into a dictionary in NSUserDefaults
+    func refresh() {
+        if postText != nil{
+            println("post text >>")
+            println(postText)
+            let defaults = NSUserDefaults.standardUserDefaults()
+            var votes = 0
+            /*struct myDataType{
+            }*/
+            
+            //var array = [, votes]
+            /*if defaults.objectForKey("0") == nil {
+            defaults.setObject(0, forKey: "0")//postText!)
+            }*//* else {
+            let number = NSUserDefaults.standardUserDefaults().objectForKey("0")) as Int?
+            if number != nil {
+            var numberN = number!
+            numberN++
+            println(numberN)
+            countLabel.text = String(numberN)
+            defaults.setInteger(numberN, forKey: String(index))
+            }
+            }*/
+            /*defaults.setInteger(votes,forKey: postText!);*/
+            
+            var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
+            println(count) //MAKE SURE IT'S AN EVEN NUMBER
+            
+            /*if count % 2 != 0 {
+            for key in NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys {
+            println("cleaning")
+            NSUserDefaults.standardUserDefaults().removeObjectForKey(key.description)
+            }
+            count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
+            println(count)
+            }*/
+            
+            /*let dictType1 = NSUserDefaults.standardUserDefaults().dictionaryRepresentation() as Dictionary
+            println(dictType1)*/
+            defaults.setObject(postText, forKey: String(count/2 + 1))
+            defaults.setObject(votes, forKey: String(-(count/2 + 1)))
+            /*let dictType = NSUserDefaults.standardUserDefaults().dictionaryRepresentation() as Dictionary
+            println(dictType)*/
+            
+            //var x = defaults.integerForKey(postText!)
+            //println(x)
+            // println("stored \(postText)")
+            //count++
+            //println(defaults)
+            
+            // var keys = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys
+            // var values = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().values
+            // println("keys and vals:")
+            // println(keys)
+            // println(values)
+            //refreshControl?.beginRefreshing()
+            //refresh(refreshControl)
+        }
+    }
+    
+    // MARK: - Storyboard Connectivity
+    
+    @IBOutlet private weak var searchTextField: UITextField! {
+        didSet {
+            searchTextField.delegate = self
+            searchTextField.text = postText
+            //self.performSegueWithIdentifier("doneSegue", sender: self)
+        }
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == searchTextField {
+            textField.resignFirstResponder()
+            postText = textField.text
+        }
+        return true
+    }
+
+}

@@ -27,6 +27,7 @@ class PostTableViewCell: UITableViewCell
     @IBOutlet weak var content: UILabel!
     
     func updateUI() {
+        println("UPDATEUI")
         content?.attributedText = nil
         if let type = self.type
         {
