@@ -20,6 +20,7 @@ class PostTableViewCell: UITableViewCell
     //keeps track of the current row
     var row: Int? {
         didSet {
+            updateUI()
         }
     }
     
