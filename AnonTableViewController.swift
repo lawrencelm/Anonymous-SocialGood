@@ -52,7 +52,7 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
     
     // MARK: - Refreshing
     
-    private var lastSuccessfulRequest: TwitterRequest?
+   /* private var lastSuccessfulRequest: TwitterRequest?
     
     private var nextRequestToAttempt: TwitterRequest? {
         if lastSuccessfulRequest == nil {
@@ -81,7 +81,7 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
         } else {
             sender?.endRefreshing()
         }
-    }
+    }*/
     
     
     

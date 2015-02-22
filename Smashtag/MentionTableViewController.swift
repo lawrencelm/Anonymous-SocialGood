@@ -5,7 +5,7 @@
 //  Created by Lawrence Lin Murata on 2/17/15.
 //  Copyright (c) 2015 Stanford University. All rights reserved.
 //
-
+/*
 import UIKit
 
 class MentionTableViewController: UITableViewController, UITextFieldDelegate
@@ -197,4 +197,4 @@ class MentionTableViewController: UITableViewController, UITextFieldDelegate
             return cell
         }
     }
-}
+}*/
