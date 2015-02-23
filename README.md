@@ -1,4 +1,6 @@
-# Civil
+#  Civil - Empowering Voices Everywhere
+
+### Anonymously post and vote on complaints/suggestions to town, city, community officials.
 
 > Civil empowers voices everywhere. It’s democracy at its finest.
 
