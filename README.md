@@ -1,8 +1,8 @@
 #  Civil - Empowering Voices Everywhere
 
-### Anonymously post and vote on complaints/suggestions to town, city, community officials.
+> Anonymously post and vote on complaints/suggestions to town, city, community officials.
 
-> Civil empowers voices everywhere. It’s democracy at its finest.
+Civil empowers voices everywhere. It’s democracy at its finest.
 
 With Civil, you can directly voice your opinion to your city, state, or any community officials completely anonymously, and vote on others’ ideas. It’s the safest, easiest way to communicate with your officials and hold them accountable for your fellow citizens’ thoughts and opinions.
 
