@@ -80,6 +80,16 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
         var votes = 0
             
         var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
+            
+        /*
+            if NSUserDefaults.standardUserDefaults().objectForKey("0") == nil {
+                NSUserDefaults.standardUserDefaults().objectForKey("0") = 1
+            } else {
+                var total: Int = NSUserDefaults.standardUserDefaults().objectForKey("0") as Int
+                NSUserDefaults.standardUserDefaults().objectForKey("0") = total + 1
+                indexToInsert = total + 1
+            }
+        */
 
         defaults.setObject(postText, forKey: String(count/2 + 1))
         defaults.setObject(votes, forKey: String(-(count/2 + 1)))
