@@ -15,3 +15,14 @@ Besides cities and governments, Civil could be used in classrooms, schools, comp
 No matter what race or gender you are, what language you speak, or how old you are, Civil’s inherent anonymity ensures that everyone is equally represented as one valuable community member.
 
 ## Welcome to Civil – the world of Anonymous Democracy.
+
+
+##RoadMap
+#What's Working:
+* Sorting of posts
+* Upvote/Downvote functions
+
+
+#What to Implement:
+* Fix UI errors
+* Implement Google API
