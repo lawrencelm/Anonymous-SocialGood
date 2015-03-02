@@ -1,6 +1,6 @@
 //
-//  SmashtagTests.swift
-//  SmashtagTests
+//  CivilTests.swift
+//  CivilTests
 //
 //  Created by CS193p Instructor.
 //  Copyright (c) 2015 Stanford University. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class SmashtagTests: XCTestCase {
+class CivilTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

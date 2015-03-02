@@ -23,7 +23,7 @@
 		EC68761C1A898EF4006B5FDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC68761A1A898EF4006B5FDB /* Main.storyboard */; };
 		EC68761E1A898EF4006B5FDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC68761D1A898EF4006B5FDB /* Images.xcassets */; };
 		EC6876211A898EF4006B5FDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC68761F1A898EF4006B5FDB /* LaunchScreen.xib */; };
-		EC68762D1A898EF4006B5FDB /* SmashtagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC68762C1A898EF4006B5FDB /* SmashtagTests.swift */; };
+		EC68762D1A898EF4006B5FDB /* CivilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC68762C1A898EF4006B5FDB /* CivilTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,7 @@
 		2107F7EC1A97196E005BF9A2 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		2156AD8C1A98B92900CD942C /* AnonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnonTableViewCell.swift; sourceTree = "<group>"; };
 		2156AD8E1A99557000CD942C /* AnonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnonTableViewController.swift; path = ../AnonTableViewController.swift; sourceTree = "<group>"; };
-		21DE979E1A99B239001395FC /* TopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTableViewCell.swift; sourceTree = "<group>"; };
+		21DE979E1A99B239001395FC /* TopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopTableViewCell.swift; path = "../../../../../../../../Code/Anonymous-SocialGood/Smashtag/TopTableViewCell.swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DE97A01A99B2BE001395FC /* TopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTableViewController.swift; sourceTree = "<group>"; };
 		21DE97A21A99F708001395FC /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		21DE97A41A99F725001395FC /* PostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
@@ -49,15 +49,15 @@
 		21E35BDF1A96FB8C00BD0F4E /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		3B864EDB1A9A37E000286524 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3B864EDD1A9A5C1600286524 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		EC6876111A898EF4006B5FDB /* Smashtag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smashtag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6876111A898EF4006B5FDB /* Civil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Civil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6876151A898EF4006B5FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC6876161A898EF4006B5FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC68761B1A898EF4006B5FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC68761D1A898EF4006B5FDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EC6876201A898EF4006B5FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		EC6876261A898EF4006B5FDB /* SmashtagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmashtagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6876261A898EF4006B5FDB /* CivilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CivilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC68762B1A898EF4006B5FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC68762C1A898EF4006B5FDB /* SmashtagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmashtagTests.swift; sourceTree = "<group>"; };
+		EC68762C1A898EF4006B5FDB /* CivilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				3B864EDB1A9A37E000286524 /* MapKit.framework */,
-				EC6876131A898EF4006B5FDB /* Smashtag */,
-				EC6876291A898EF4006B5FDB /* SmashtagTests */,
+				EC6876131A898EF4006B5FDB /* Civil */,
+				EC6876291A898EF4006B5FDB /* CivilTests */,
 				EC6876121A898EF4006B5FDB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,13 +92,13 @@
 		EC6876121A898EF4006B5FDB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC6876111A898EF4006B5FDB /* Smashtag.app */,
-				EC6876261A898EF4006B5FDB /* SmashtagTests.xctest */,
+				EC6876111A898EF4006B5FDB /* Civil.app */,
+				EC6876261A898EF4006B5FDB /* CivilTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC6876131A898EF4006B5FDB /* Smashtag */ = {
+		EC6876131A898EF4006B5FDB /* Civil */ = {
 			isa = PBXGroup;
 			children = (
 				EC68761A1A898EF4006B5FDB /* Main.storyboard */,
@@ -115,6 +115,7 @@
 				21DE97A61A9A0C9E001395FC /* WriteViewController.swift */,
 				EC6876141A898EF4006B5FDB /* Supporting Files */,
 			);
+			name = Civil;
 			path = Smashtag;
 			sourceTree = "<group>";
 		};
@@ -129,12 +130,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EC6876291A898EF4006B5FDB /* SmashtagTests */ = {
+		EC6876291A898EF4006B5FDB /* CivilTests */ = {
 			isa = PBXGroup;
 			children = (
-				EC68762C1A898EF4006B5FDB /* SmashtagTests.swift */,
+				EC68762C1A898EF4006B5FDB /* CivilTests.swift */,
 				EC68762A1A898EF4006B5FDB /* Supporting Files */,
 			);
+			name = CivilTests;
 			path = SmashtagTests;
 			sourceTree = "<group>";
 		};
@@ -149,9 +151,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EC6876101A898EF4006B5FDB /* Smashtag */ = {
+		EC6876101A898EF4006B5FDB /* Civil */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC6876301A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "Smashtag" */;
+			buildConfigurationList = EC6876301A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "Civil" */;
 			buildPhases = (
 				EC68760D1A898EF4006B5FDB /* Sources */,
 				EC68760E1A898EF4006B5FDB /* Frameworks */,
@@ -161,14 +163,14 @@
 			);
 			dependencies = (
 			);
-			name = Smashtag;
+			name = Civil;
 			productName = Smashtag;
-			productReference = EC6876111A898EF4006B5FDB /* Smashtag.app */;
+			productReference = EC6876111A898EF4006B5FDB /* Civil.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EC6876251A898EF4006B5FDB /* SmashtagTests */ = {
+		EC6876251A898EF4006B5FDB /* CivilTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC6876331A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "SmashtagTests" */;
+			buildConfigurationList = EC6876331A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "CivilTests" */;
 			buildPhases = (
 				EC6876221A898EF4006B5FDB /* Sources */,
 				EC6876231A898EF4006B5FDB /* Frameworks */,
@@ -179,9 +181,9 @@
 			dependencies = (
 				EC6876281A898EF4006B5FDB /* PBXTargetDependency */,
 			);
-			name = SmashtagTests;
+			name = CivilTests;
 			productName = SmashtagTests;
-			productReference = EC6876261A898EF4006B5FDB /* SmashtagTests.xctest */;
+			productReference = EC6876261A898EF4006B5FDB /* CivilTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -202,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EC68760C1A898EF4006B5FDB /* Build configuration list for PBXProject "Smashtag" */;
+			buildConfigurationList = EC68760C1A898EF4006B5FDB /* Build configuration list for PBXProject "Civil" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -215,8 +217,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC6876101A898EF4006B5FDB /* Smashtag */,
-				EC6876251A898EF4006B5FDB /* SmashtagTests */,
+				EC6876101A898EF4006B5FDB /* Civil */,
+				EC6876251A898EF4006B5FDB /* CivilTests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC68762D1A898EF4006B5FDB /* SmashtagTests.swift in Sources */,
+				EC68762D1A898EF4006B5FDB /* CivilTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +276,7 @@
 /* Begin PBXTargetDependency section */
 		EC6876281A898EF4006B5FDB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC6876101A898EF4006B5FDB /* Smashtag */;
+			target = EC6876101A898EF4006B5FDB /* Civil */;
 			targetProxy = EC6876271A898EF4006B5FDB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -384,7 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Smashtag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Civil;
 			};
 			name = Debug;
 		};
@@ -394,7 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Smashtag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Civil;
 			};
 			name = Release;
 		};
@@ -412,7 +414,7 @@
 				);
 				INFOPLIST_FILE = SmashtagTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CivilTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smashtag.app/Smashtag";
 			};
 			name = Debug;
@@ -427,7 +429,7 @@
 				);
 				INFOPLIST_FILE = SmashtagTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CivilTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smashtag.app/Smashtag";
 			};
 			name = Release;
@@ -435,7 +437,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EC68760C1A898EF4006B5FDB /* Build configuration list for PBXProject "Smashtag" */ = {
+		EC68760C1A898EF4006B5FDB /* Build configuration list for PBXProject "Civil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC68762E1A898EF4006B5FDB /* Debug */,
@@ -444,7 +446,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC6876301A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "Smashtag" */ = {
+		EC6876301A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "Civil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC6876311A898EF4006B5FDB /* Debug */,
@@ -453,7 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC6876331A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "SmashtagTests" */ = {
+		EC6876331A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "CivilTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC6876341A898EF4006B5FDB /* Debug */,
