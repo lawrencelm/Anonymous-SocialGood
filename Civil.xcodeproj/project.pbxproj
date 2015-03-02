@@ -21,11 +21,22 @@
 		3B864EDE1A9A5C1700286524 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B864EDD1A9A5C1600286524 /* ProfileViewController.swift */; };
 		3BDD61CE1AA41B1B00D06E09 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDD61CD1AA41B1B00D06E09 /* GoogleMaps.framework */; };
 		3BDD61D01AA41B4700D06E09 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BDD61CF1AA41B4700D06E09 /* GoogleMaps.bundle */; };
+		3BDD61D71AA41C1C00D06E09 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDD61D11AA41C1C00D06E09 /* AVFoundation.framework */; };
+		3BDD61D81AA41C1C00D06E09 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDD61D21AA41C1C00D06E09 /* CoreData.framework */; };
+		3BDD61D91AA41C1C00D06E09 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDD61D31AA41C1C00D06E09 /* CoreLocation.framework */; };
+		3BDD61DA1AA41C1C00D06E09 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDD61D41AA41C1C00D06E09 /* CoreText.framework */; };
+		3BDD61DB1AA41C1C00D06E09 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDD61D51AA41C1C00D06E09 /* GLKit.framework */; };
+		3BDD61DC1AA41C1C00D06E09 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDD61D61AA41C1C00D06E09 /* ImageIO.framework */; };
+		3BDD61DE1AA41C2900D06E09 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDD61DD1AA41C2900D06E09 /* libc++.dylib */; };
+		3BDD61E01AA41C3B00D06E09 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDD61DF1AA41C3B00D06E09 /* libicucore.dylib */; };
+		3BDD61E21AA41C4700D06E09 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDD61E11AA41C4700D06E09 /* libz.dylib */; };
+		3BDD61E41AA41C5200D06E09 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDD61E31AA41C5200D06E09 /* OpenGLES.framework */; };
+		3BDD61E61AA41C5D00D06E09 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDD61E51AA41C5D00D06E09 /* QuartzCore.framework */; };
+		3BDD61E81AA41C6800D06E09 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDD61E71AA41C6800D06E09 /* SystemConfiguration.framework */; };
 		EC6876171A898EF4006B5FDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6876161A898EF4006B5FDB /* AppDelegate.swift */; };
 		EC68761C1A898EF4006B5FDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC68761A1A898EF4006B5FDB /* Main.storyboard */; };
 		EC68761E1A898EF4006B5FDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC68761D1A898EF4006B5FDB /* Images.xcassets */; };
 		EC6876211A898EF4006B5FDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC68761F1A898EF4006B5FDB /* LaunchScreen.xib */; };
-		EC68762D1A898EF4006B5FDB /* SmashtagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC68762C1A898EF4006B5FDB /* SmashtagTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +64,25 @@
 		3B864EDD1A9A5C1600286524 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3BDD61CD1AA41B1B00D06E09 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		3BDD61CF1AA41B4700D06E09 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		EC6876111A898EF4006B5FDB /* Smashtag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smashtag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BDD61D11AA41C1C00D06E09 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3BDD61D21AA41C1C00D06E09 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3BDD61D31AA41C1C00D06E09 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3BDD61D41AA41C1C00D06E09 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		3BDD61D51AA41C1C00D06E09 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		3BDD61D61AA41C1C00D06E09 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3BDD61DD1AA41C2900D06E09 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		3BDD61DF1AA41C3B00D06E09 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		3BDD61E11AA41C4700D06E09 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3BDD61E31AA41C5200D06E09 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3BDD61E51AA41C5D00D06E09 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3BDD61E71AA41C6800D06E09 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EC6876111A898EF4006B5FDB /* Civil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Civil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6876151A898EF4006B5FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC6876161A898EF4006B5FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC68761B1A898EF4006B5FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC68761D1A898EF4006B5FDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EC6876201A898EF4006B5FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		EC6876261A898EF4006B5FDB /* SmashtagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmashtagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6876261A898EF4006B5FDB /* CivilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CivilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC68762B1A898EF4006B5FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC68762C1A898EF4006B5FDB /* SmashtagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmashtagTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +92,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDD61E81AA41C6800D06E09 /* SystemConfiguration.framework in Frameworks */,
+				3BDD61E61AA41C5D00D06E09 /* QuartzCore.framework in Frameworks */,
+				3BDD61E41AA41C5200D06E09 /* OpenGLES.framework in Frameworks */,
+				3BDD61E21AA41C4700D06E09 /* libz.dylib in Frameworks */,
+				3BDD61E01AA41C3B00D06E09 /* libicucore.dylib in Frameworks */,
+				3BDD61DE1AA41C2900D06E09 /* libc++.dylib in Frameworks */,
+				3BDD61D71AA41C1C00D06E09 /* AVFoundation.framework in Frameworks */,
+				3BDD61D81AA41C1C00D06E09 /* CoreData.framework in Frameworks */,
+				3BDD61D91AA41C1C00D06E09 /* CoreLocation.framework in Frameworks */,
+				3BDD61DA1AA41C1C00D06E09 /* CoreText.framework in Frameworks */,
+				3BDD61DB1AA41C1C00D06E09 /* GLKit.framework in Frameworks */,
+				3BDD61DC1AA41C1C00D06E09 /* ImageIO.framework in Frameworks */,
 				3BDD61CE1AA41B1B00D06E09 /* GoogleMaps.framework in Frameworks */,
 				3B864EDC1A9A37E000286524 /* MapKit.framework in Frameworks */,
 			);
@@ -87,6 +122,18 @@
 		EC6876081A898EF4006B5FDB = {
 			isa = PBXGroup;
 			children = (
+				3BDD61E71AA41C6800D06E09 /* SystemConfiguration.framework */,
+				3BDD61E51AA41C5D00D06E09 /* QuartzCore.framework */,
+				3BDD61E31AA41C5200D06E09 /* OpenGLES.framework */,
+				3BDD61E11AA41C4700D06E09 /* libz.dylib */,
+				3BDD61DF1AA41C3B00D06E09 /* libicucore.dylib */,
+				3BDD61DD1AA41C2900D06E09 /* libc++.dylib */,
+				3BDD61D11AA41C1C00D06E09 /* AVFoundation.framework */,
+				3BDD61D21AA41C1C00D06E09 /* CoreData.framework */,
+				3BDD61D31AA41C1C00D06E09 /* CoreLocation.framework */,
+				3BDD61D41AA41C1C00D06E09 /* CoreText.framework */,
+				3BDD61D51AA41C1C00D06E09 /* GLKit.framework */,
+				3BDD61D61AA41C1C00D06E09 /* ImageIO.framework */,
 				3BDD61CF1AA41B4700D06E09 /* GoogleMaps.bundle */,
 				3BDD61CD1AA41B1B00D06E09 /* GoogleMaps.framework */,
 				3B864EDB1A9A37E000286524 /* MapKit.framework */,
@@ -99,8 +146,8 @@
 		EC6876121A898EF4006B5FDB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC6876111A898EF4006B5FDB /* Smashtag.app */,
-				EC6876261A898EF4006B5FDB /* SmashtagTests.xctest */,
+				EC6876111A898EF4006B5FDB /* Civil.app */,
+				EC6876261A898EF4006B5FDB /* CivilTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,9 +203,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EC6876101A898EF4006B5FDB /* Smashtag */ = {
+		EC6876101A898EF4006B5FDB /* Civil */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC6876301A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "Smashtag" */;
+			buildConfigurationList = EC6876301A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "Civil" */;
 			buildPhases = (
 				EC68760D1A898EF4006B5FDB /* Sources */,
 				EC68760E1A898EF4006B5FDB /* Frameworks */,
@@ -168,14 +215,14 @@
 			);
 			dependencies = (
 			);
-			name = Smashtag;
+			name = Civil;
 			productName = Smashtag;
-			productReference = EC6876111A898EF4006B5FDB /* Smashtag.app */;
+			productReference = EC6876111A898EF4006B5FDB /* Civil.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EC6876251A898EF4006B5FDB /* SmashtagTests */ = {
+		EC6876251A898EF4006B5FDB /* CivilTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC6876331A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "SmashtagTests" */;
+			buildConfigurationList = EC6876331A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "CivilTests" */;
 			buildPhases = (
 				EC6876221A898EF4006B5FDB /* Sources */,
 				EC6876231A898EF4006B5FDB /* Frameworks */,
@@ -186,9 +233,9 @@
 			dependencies = (
 				EC6876281A898EF4006B5FDB /* PBXTargetDependency */,
 			);
-			name = SmashtagTests;
+			name = CivilTests;
 			productName = SmashtagTests;
-			productReference = EC6876261A898EF4006B5FDB /* SmashtagTests.xctest */;
+			productReference = EC6876261A898EF4006B5FDB /* CivilTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +256,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EC68760C1A898EF4006B5FDB /* Build configuration list for PBXProject "Smashtag" */;
+			buildConfigurationList = EC68760C1A898EF4006B5FDB /* Build configuration list for PBXProject "Civil" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -222,8 +269,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC6876101A898EF4006B5FDB /* Smashtag */,
-				EC6876251A898EF4006B5FDB /* SmashtagTests */,
+				EC6876101A898EF4006B5FDB /* Civil */,
+				EC6876251A898EF4006B5FDB /* CivilTests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,7 +320,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC68762D1A898EF4006B5FDB /* SmashtagTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +328,7 @@
 /* Begin PBXTargetDependency section */
 		EC6876281A898EF4006B5FDB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC6876101A898EF4006B5FDB /* Smashtag */;
+			target = EC6876101A898EF4006B5FDB /* Civil */;
 			targetProxy = EC6876271A898EF4006B5FDB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -396,7 +442,7 @@
 				);
 				INFOPLIST_FILE = Smashtag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Civil;
 			};
 			name = Debug;
 		};
@@ -410,7 +456,7 @@
 				);
 				INFOPLIST_FILE = Smashtag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Civil;
 			};
 			name = Release;
 		};
@@ -428,7 +474,7 @@
 				);
 				INFOPLIST_FILE = SmashtagTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CivilTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smashtag.app/Smashtag";
 			};
 			name = Debug;
@@ -443,7 +489,7 @@
 				);
 				INFOPLIST_FILE = SmashtagTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CivilTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smashtag.app/Smashtag";
 			};
 			name = Release;
@@ -451,7 +497,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EC68760C1A898EF4006B5FDB /* Build configuration list for PBXProject "Smashtag" */ = {
+		EC68760C1A898EF4006B5FDB /* Build configuration list for PBXProject "Civil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC68762E1A898EF4006B5FDB /* Debug */,
@@ -460,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC6876301A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "Smashtag" */ = {
+		EC6876301A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "Civil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC6876311A898EF4006B5FDB /* Debug */,
@@ -469,7 +515,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC6876331A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "SmashtagTests" */ = {
+		EC6876331A898EF4006B5FDB /* Build configuration list for PBXNativeTarget "CivilTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC6876341A898EF4006B5FDB /* Debug */,

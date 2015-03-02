@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC6876101A898EF4006B5FDB"
-               BuildableName = "Smashtag.app"
-               BlueprintName = "Smashtag"
-               ReferencedContainer = "container:Smashtag.xcodeproj">
+               BuildableName = "Civil.app"
+               BlueprintName = "Civil"
+               ReferencedContainer = "container:Civil.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC6876251A898EF4006B5FDB"
-               BuildableName = "SmashtagTests.xctest"
-               BlueprintName = "SmashtagTests"
-               ReferencedContainer = "container:Smashtag.xcodeproj">
+               BuildableName = "CivilTests.xctest"
+               BlueprintName = "CivilTests"
+               ReferencedContainer = "container:Civil.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC6876251A898EF4006B5FDB"
-               BuildableName = "SmashtagTests.xctest"
-               BlueprintName = "SmashtagTests"
-               ReferencedContainer = "container:Smashtag.xcodeproj">
+               BuildableName = "CivilTests.xctest"
+               BlueprintName = "CivilTests"
+               ReferencedContainer = "container:Civil.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC6876101A898EF4006B5FDB"
-            BuildableName = "Smashtag.app"
-            BlueprintName = "Smashtag"
-            ReferencedContainer = "container:Smashtag.xcodeproj">
+            BuildableName = "Civil.app"
+            BlueprintName = "Civil"
+            ReferencedContainer = "container:Civil.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC6876101A898EF4006B5FDB"
-            BuildableName = "Smashtag.app"
-            BlueprintName = "Smashtag"
-            ReferencedContainer = "container:Smashtag.xcodeproj">
+            BuildableName = "Civil.app"
+            BlueprintName = "Civil"
+            ReferencedContainer = "container:Civil.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC6876101A898EF4006B5FDB"
-            BuildableName = "Smashtag.app"
-            BlueprintName = "Smashtag"
-            ReferencedContainer = "container:Smashtag.xcodeproj">
+            BuildableName = "Civil.app"
+            BlueprintName = "Civil"
+            ReferencedContainer = "container:Civil.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
