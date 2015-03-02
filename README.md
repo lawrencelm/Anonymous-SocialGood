@@ -18,11 +18,11 @@ No matter what race or gender you are, what language you speak, or how old you a
 
 
 ##RoadMap
-#What's Working:
+What's Working:
 * Sorting of posts
 * Upvote/Downvote functions
 
 
-#What to Implement:
+What to Implement:
 * Fix UI errors
 * Implement Google API
