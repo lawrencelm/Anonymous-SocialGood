@@ -19,6 +19,8 @@
 		21E35BE01A96FB8C00BD0F4E /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E35BDF1A96FB8C00BD0F4E /* ImageTableViewCell.swift */; };
 		3B864EDC1A9A37E000286524 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B864EDB1A9A37E000286524 /* MapKit.framework */; };
 		3B864EDE1A9A5C1700286524 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B864EDD1A9A5C1600286524 /* ProfileViewController.swift */; };
+		3BDD61CE1AA41B1B00D06E09 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDD61CD1AA41B1B00D06E09 /* GoogleMaps.framework */; };
+		3BDD61D01AA41B4700D06E09 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BDD61CF1AA41B4700D06E09 /* GoogleMaps.bundle */; };
 		EC6876171A898EF4006B5FDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6876161A898EF4006B5FDB /* AppDelegate.swift */; };
 		EC68761C1A898EF4006B5FDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC68761A1A898EF4006B5FDB /* Main.storyboard */; };
 		EC68761E1A898EF4006B5FDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC68761D1A898EF4006B5FDB /* Images.xcassets */; };
@@ -49,6 +51,8 @@
 		21E35BDF1A96FB8C00BD0F4E /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		3B864EDB1A9A37E000286524 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3B864EDD1A9A5C1600286524 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3BDD61CD1AA41B1B00D06E09 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		3BDD61CF1AA41B4700D06E09 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		EC6876111A898EF4006B5FDB /* Smashtag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smashtag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6876151A898EF4006B5FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC6876161A898EF4006B5FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDD61CE1AA41B1B00D06E09 /* GoogleMaps.framework in Frameworks */,
 				3B864EDC1A9A37E000286524 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +87,8 @@
 		EC6876081A898EF4006B5FDB = {
 			isa = PBXGroup;
 			children = (
+				3BDD61CF1AA41B4700D06E09 /* GoogleMaps.bundle */,
+				3BDD61CD1AA41B1B00D06E09 /* GoogleMaps.framework */,
 				3B864EDB1A9A37E000286524 /* MapKit.framework */,
 				EC6876131A898EF4006B5FDB /* Smashtag */,
 				EC6876291A898EF4006B5FDB /* SmashtagTests */,
@@ -229,6 +236,7 @@
 				EC68761C1A898EF4006B5FDB /* Main.storyboard in Resources */,
 				EC6876211A898EF4006B5FDB /* LaunchScreen.xib in Resources */,
 				EC68761E1A898EF4006B5FDB /* Images.xcassets in Resources */,
+				3BDD61D01AA41B4700D06E09 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +390,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Smashtag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -392,6 +404,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Smashtag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
