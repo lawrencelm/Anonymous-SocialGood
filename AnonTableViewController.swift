@@ -74,25 +74,28 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
     // store the searchText into a dictionary in NSUserDefaults
     func refresh() {
         if postText != nil{
-        println("post text >>")
-        println(postText)
-        let defaults = NSUserDefaults.standardUserDefaults()
+            println("post text >>")
+            println(postText)
+            
+            var post = PFObject(className: "post")
+            post.setObject(postText, forKey: "content")
+            post.setObject(0, forKey: "upvotes")
+            post.saveInBackgroundWithBlock {
+                (success: Bool!, error: NSError!) -> Void in
+                if success! {
+                    NSLog("Object created with id: \(post.objectId)")
+                } else {
+                    NSLog("%@", error)
+                }
+            }
+            
+       /* let defaults = NSUserDefaults.standardUserDefaults()
         var votes = 0
             
         var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
-            
-        /*
-            if NSUserDefaults.standardUserDefaults().objectForKey("0") == nil {
-                NSUserDefaults.standardUserDefaults().objectForKey("0") = 1
-            } else {
-                var total: Int = NSUserDefaults.standardUserDefaults().objectForKey("0") as Int
-                NSUserDefaults.standardUserDefaults().objectForKey("0") = total + 1
-                indexToInsert = total + 1
-            }
-        */
 
         defaults.setObject(postText, forKey: String(count/2 + 1))
-        defaults.setObject(votes, forKey: String(-(count/2 + 1)))
+        defaults.setObject(votes, forKey: String(-(count/2 + 1)))*/
             
         }
     }
