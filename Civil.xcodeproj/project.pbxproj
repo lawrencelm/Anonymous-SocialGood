@@ -22,6 +22,8 @@
 		21BE691D1AAB0A8C00E0B790 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BE691C1AAB0A8C00E0B790 /* Security.framework */; };
 		21BE691F1AAB0A9400E0B790 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BE691E1AAB0A9400E0B790 /* StoreKit.framework */; };
 		21BE69211AAB0AB000E0B790 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BE69201AAB0AB000E0B790 /* libsqlite3.dylib */; };
+		21BE69261AAB0D6F00E0B790 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE69251AAB0D6F00E0B790 /* Data.swift */; };
+		21BE69281AAB0F8800E0B790 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE69271AAB0F8800E0B790 /* Data.swift */; };
 		21DE979F1A99B239001395FC /* TopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE979E1A99B239001395FC /* TopTableViewCell.swift */; };
 		21DE97A11A99B2BE001395FC /* TopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE97A01A99B2BE001395FC /* TopTableViewController.swift */; };
 		21DE97A31A99F708001395FC /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE97A21A99F708001395FC /* PostTableViewCell.swift */; };
@@ -78,6 +80,8 @@
 		21BE691E1AAB0A9400E0B790 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		21BE69201AAB0AB000E0B790 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		21BE69221AAB0B1300E0B790 /* Civil-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Civil-Bridging-Header.h"; path = "../Civil-Bridging-Header.h"; sourceTree = "<group>"; };
+		21BE69251AAB0D6F00E0B790 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		21BE69271AAB0F8800E0B790 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = SOURCE_ROOT; };
 		21DE979E1A99B239001395FC /* TopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTableViewCell.swift; sourceTree = "<group>"; };
 		21DE97A01A99B2BE001395FC /* TopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTableViewController.swift; sourceTree = "<group>"; };
 		21DE97A21A99F708001395FC /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
@@ -232,8 +236,11 @@
 				21E35BDF1A96FB8C00BD0F4E /* ImageTableViewCell.swift */,
 				2107F7EC1A97196E005BF9A2 /* ImageViewController.swift */,
 				21DE97A61A9A0C9E001395FC /* WriteViewController.swift */,
+				EC6876161A898EF4006B5FDB /* AppDelegate.swift */,
+				21BE69271AAB0F8800E0B790 /* Data.swift */,
 				21BE69221AAB0B1300E0B790 /* Civil-Bridging-Header.h */,
 				EC6876141A898EF4006B5FDB /* Supporting Files */,
+				21BE69251AAB0D6F00E0B790 /* Data.swift */,
 			);
 			path = Smashtag;
 			sourceTree = "<group>";
@@ -243,7 +250,6 @@
 			children = (
 				EC68761F1A898EF4006B5FDB /* LaunchScreen.xib */,
 				EC68761D1A898EF4006B5FDB /* Images.xcassets */,
-				EC6876161A898EF4006B5FDB /* AppDelegate.swift */,
 				EC6876151A898EF4006B5FDB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -374,7 +380,9 @@
 				21DE97A51A99F725001395FC /* PostTableViewController.swift in Sources */,
 				21DE97A71A9A0C9F001395FC /* WriteViewController.swift in Sources */,
 				3B864EDE1A9A5C1700286524 /* ProfileViewController.swift in Sources */,
+				21BE69281AAB0F8800E0B790 /* Data.swift in Sources */,
 				2156AD8D1A98B92900CD942C /* AnonTableViewCell.swift in Sources */,
+				21BE69261AAB0D6F00E0B790 /* Data.swift in Sources */,
 				21E35BE01A96FB8C00BD0F4E /* ImageTableViewCell.swift in Sources */,
 				21DE97A11A99B2BE001395FC /* TopTableViewController.swift in Sources */,
 				2107F7ED1A97196E005BF9A2 /* ImageViewController.swift in Sources */,
