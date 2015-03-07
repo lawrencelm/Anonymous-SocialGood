@@ -129,7 +129,7 @@ class AnonTableViewController: UITableViewController, UITextFieldDelegate
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var query = PFQuery(className: "AnonCrush")
+        var query = PFQuery(className: "post")
         var array = query.findObjects()
         if array.count < 100 {
             return array.count
