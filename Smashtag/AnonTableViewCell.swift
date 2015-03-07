@@ -51,7 +51,18 @@ class AnonTableViewCell: UITableViewCell
     
     func updateUI() {
         anonPost?.attributedText = nil
-        var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
+        var query = PFQuery(className: "post")
+        var array = query.findObjects()
+        var index = array.count - 1 - row!
+        if index >= 0 {
+            let newText: AnyObject? = array[index].objectForKey("post")
+            let newNumber: AnyObject? = array[array.count - 1 - row!].objectForKey("upvotes")
+            if newText != nil && newNumber != nil {
+                anonPost.text = newText as? String
+                countLabel.text = String(newNumber as Int)
+            }
+        }
+        /*var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
         var index = count/2 - row!
         let defaults = NSUserDefaults.standardUserDefaults()
         var keys = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys
@@ -64,6 +75,6 @@ class AnonTableViewCell: UITableViewCell
         if newText != nil && newNumber != nil {
             anonPost.text = newText!
             countLabel.text = String(newNumber!)
-        }
+        }*/
     }
 }
