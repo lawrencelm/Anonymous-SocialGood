@@ -34,6 +34,20 @@
                ReferencedContainer = "container:Smashtag.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EC6876101A898EF4006B5FDB"
+               BuildableName = "Civil.app"
+               BlueprintName = "Civil"
+               ReferencedContainer = "container:Civil.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
