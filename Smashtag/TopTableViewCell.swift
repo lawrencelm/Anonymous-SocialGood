@@ -57,7 +57,31 @@ class TopTableViewCell: UITableViewCell
     @IBOutlet weak var anonPost: UILabel!
     
     @IBAction func upvote(sender: AnyObject) {
-        var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
+        println("upvote")
+        var query = PFQuery(className: "post")
+        var array = query.findObjects()
+        var index = array.count - 1 - row!
+        if index >= 0 {
+            println(index)
+            var newNumber = array[index].objectForKey("upvotes") as Int?
+            if newNumber != nil {
+                println(newNumber)
+                newNumber!++
+                println(newNumber)
+                array[index].setObject(newNumber, forKey: "upvotes")
+                println(array[index].objectForKey("upvotes"))
+                countLabel.text = String(newNumber!)
+                array[index].saveInBackgroundWithBlock {
+                    (success: Bool!, error: NSError!) -> Void in
+                    if success! {
+                        NSLog("Object created with id: \(array[index].objectId)")
+                    } else {
+                        NSLog("%@", error)
+                    }
+                }
+            }
+        }
+        /*var count = NSUserDefaults.standardUserDefaults().dictionaryRepresentation().count
         var index = count/2 - row!
         let defaults = NSUserDefaults.standardUserDefaults()
         let number = NSUserDefaults.standardUserDefaults().objectForKey(indexKeyNeg!) as Int?
@@ -67,7 +91,7 @@ class TopTableViewCell: UITableViewCell
             println(numberN)
             countLabel.text = String(numberN)
             defaults.setInteger(numberN, forKey: indexKeyNeg!)
-        }
+        }*/
     }
     
     @IBAction func downvote(sender: AnyObject) {
@@ -80,7 +104,7 @@ class TopTableViewCell: UITableViewCell
             var newNumber = array[index].objectForKey("upvotes") as Int?
             if newNumber != nil {
                 println(newNumber)
-                newNumber!++
+                newNumber!--
                 println(newNumber)
                 array[index].setObject(newNumber, forKey: "upvotes")
                 println(array[index].objectForKey("upvotes"))
